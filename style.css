@@ -1,0 +1,129 @@
+:root{
+    --dark-color: #3c7186;
+    --light-color: #d3d0b2;
+    --bg-color: #19212B;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-color);
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+
+label{
+    text-align: center;
+    margin-bottom: 5px;
+    color: var(--light-color);
+    font-weight: bold;
+}
+
+input{
+    border: 0;
+    border-bottom: 1px solid var(--light-color);
+    text-align: center;
+    background: none;
+    color: var(--light-color);
+}
+
+button{
+    background: 0;
+    cursor: pointer;
+    width: 120px;
+    height: 35px;
+    border-radius: 10px;
+    align-self: center;
+    margin-top: 10px;
+    color: var(--dark-color);
+    background: var(--light-color);
+    border: 0;
+    font-weight: bold;
+}
+
+button:hover{
+    background: none;
+    border: 1px solid var(--light-color);
+    color: var(--light-color);
+    transition: all 0.3s;
+}
+
+th{
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--dark-color);
+    background-color: #d3d0b2;
+    text-align: center;
+}
+
+.container{
+    width: 800px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--dark-color);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.setting-container{
+    width: 620px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.setting-container > div{
+    display: flex;
+    flex-direction: column;
+}
+
+.off{
+    display: none;
+}
+
+.game{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:20px;
+}
+
+table{
+    border-collapse: collapse;
+    cursor:pointer;
+}
+
+th:hover{
+    background-color: #a5a9a7;
+}
+
+th img {
+    margin-top: 6px;
+    width: 17px;
+    height: 17px;
+}
+
+th.zero{
+    background-color: #a5a9a7
+}

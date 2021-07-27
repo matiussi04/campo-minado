@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Campo Minado</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="setting-container">
+                <div class="rows-setting">
+                    <label for="rows">Linhas</label>
+                    <input type="number" name="rows" id="rows">
+                </div>
+                <div class="columns-setting">
+                    <label for="columns">Colunas</label>
+                    <input type="number" name="columns" id="columns">
+                </div>
+                <div class="bombs-setting">
+                    <label for="bombs">Bombas</label>
+                    <input type="number" name="bombs" id="bombs">
+                </div>
+            </div>
+            <div class="game"></div>
+            <button id="start">Jogar</button>
+            <button class="off" id="surrender">Jogar De Novo</button>
+        </div>
+    </body>
+    <script src="script.js" type="module"></script>
+</html>
