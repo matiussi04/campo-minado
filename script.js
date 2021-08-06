@@ -37,7 +37,7 @@ function start(){
 
     game.start();
 
-    document.querySelectorAll("th").forEach(v => {
+    document.querySelectorAll("td").forEach(v => {
         v.addEventListener("click", clickLeft)
         v.addEventListener("contextmenu", clickRight)
     });
@@ -59,7 +59,7 @@ function clickLeft(){
     const id = Number(this.id.substr(3));
     if (game.positions[id].bomb){
         alert("perdeu");
-        document.querySelectorAll("th").forEach(v => {
+        document.querySelectorAll("td").forEach(v => {
             v.removeEventListener("click",clickLeft);
             v.removeEventListener("contextmenu",clickRight);
             if (game.positions[Number(v.id.substr(3))].bomb){
@@ -76,8 +76,8 @@ function clickLeft(){
             game.positions[id].visited = true;
         }
         if (game.checkVictory()){
-            document.querySelectorAll("th").forEach(v => {
-                v.removeEventListener("click",clickPosition);
+            document.querySelectorAll("td").forEach(v => {
+                v.removeEventListener("click",clickLeft);
                 v.removeEventListener("contextmenu",clickRight);
             });
             alert("Booaaaaaaaaaa");

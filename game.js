@@ -18,7 +18,7 @@ export default class Game{
             HTML += "<tr>";
             for(let j = 0 ; j < this.columns ; j++){
                 const id = i * this.columns + j;
-                HTML += `<th id=th-${id}></th>`;
+                HTML += `<td id=th-${id}></td>`;
             }
             HTML += "</tr>";
         }

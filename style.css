@@ -12,8 +12,8 @@
 }
 
 body{
-    width: 100vw;
-    height: 100vh;
+    min-width: 100vw;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -66,8 +66,8 @@ button:hover{
     transition: all 0.3s;
 }
 
-th{
-    width: 30px;
+td{
+    min-width: 30px;
     height: 30px;
     border: 1px solid var(--dark-color);
     background-color: #d3d0b2;
@@ -75,7 +75,7 @@ th{
 }
 
 .container{
-    width: 800px;
+    min-width: 800px;
     min-height: 300px;
     display: flex;
     flex-direction: column;
@@ -114,16 +114,16 @@ table{
     cursor:pointer;
 }
 
-th:hover{
+td:hover{
     background-color: #a5a9a7;
 }
 
-th img {
+td img {
     margin-top: 6px;
     width: 17px;
     height: 17px;
 }
 
-th.zero{
+td.zero{
     background-color: #a5a9a7
 }
